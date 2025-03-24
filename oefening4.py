@@ -1,14 +1,7 @@
-target = int(input("input target"))
-nums = list(map(int, input("lijst").split(",")))
-def countTargetPairs(nums, target):
-    
-    TrPairs = 0
-    for getal in range(len(nums)):
-        for fofo in range( getal +1, len(nums)):
-            if gatal != fofo:
-                if nums[getal] + nums[fofo] < target:
-                    TrPairs += 1
-    return TrPairs
-
-
-print(countTargetPairs(nums, target))
+def countTargetPairs(self, nums: List[int]) -> int:
+    count = 0
+    for i in range(len(nums)):
+        for j in range(i+1,len(nums)):
+            if nums[i] == nums[j]:
+                count += 1
+    return count
