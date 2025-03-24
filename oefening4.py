@@ -3,10 +3,10 @@ nums = list(map(int, input("lijst").split(",")))
 def countTargetPairs(nums, target):
     
     TrPairs = 0
-    for i in range(len(nums)):
-        for j in range( i +1, len(nums)):
-            if i != j:
-                if nums[i] + nums[j] < target:
+    for getal in range(len(nums)):
+        for fofo in range( getal +1, len(nums)):
+            if gatal != fofo:
+                if nums[getal] + nums[fofo] < target:
                     TrPairs += 1
     return TrPairs
 
