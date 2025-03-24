@@ -1,7 +1,9 @@
-def countTargetPairs(self, nums, target):
-        qzzzt = 0
-        for j in range(1, len(nums)):
-            for i in range(0, j):
-                if nums[i]+nums[j] < target:
-                    qzzzt+=1
-        return qzzzt
+def countTargetPairs(self, nums: List[int], target: int) -> int:
+    n=len(nums)
+    ans=0
+    for i in range(n):
+        for j in range(i,n):
+            if i<j and nums[i]+nums[j]<target:
+                ans+=1
+
+    return ans
