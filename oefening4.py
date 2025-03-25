@@ -12,4 +12,3 @@ def countTargetPairs(nums, target):
 
 
 print(countTargetPairs(nums, target))
-
